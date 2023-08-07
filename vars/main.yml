@@ -8,3 +8,5 @@ tmp_folder: tmp/              # temp folder
 
 inbox_folder: inbox/          # folder to receive requests
 
+outbox_folder: outbox/        # Project outbox folder
+

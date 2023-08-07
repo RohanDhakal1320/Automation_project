@@ -1,0 +1,9 @@
+---
+# load a text file and display its content on ansible console
+#
+# Args:
+#   text_file_name(str) - file name (including path, if needed)
+
+- name: display file on the console
+  debug:
+    msg: "{{lookup('file', text_file_name).split('\n')}}"

@@ -1,0 +1,14 @@
+---
+# Extract YYYY, MM and DD from a given data (YYYY-MM-DD)
+#
+# Input
+#   data_YYYY(str) - the YYYY portion of the data
+#   date_MM(str) - the MM portion of the date
+#   date_DD(str) - the DD portion of the date
+
+- name: split date into YYYY, MM and DD
+  set_fact: 
+    date_YYYY: "{{ date[0:4] }}"
+    date_MM: "{{ date[5:7] }}"
+    date_DD: "{{ date[8:10] }}"
+    
