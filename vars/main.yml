@@ -1,0 +1,10 @@
+# common variables
+
+specs_folder: specs/          # Specification folder
+
+examples_folder: examples/    # Examples
+
+tmp_folder: tmp/              # temp folder
+
+inbox_folder: inbox/          # folder to receive requests
+

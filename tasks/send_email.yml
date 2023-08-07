@@ -1,0 +1,26 @@
+# Send email using ansible Tower template
+#
+# Input Parameters:
+#   email_sender: str         # email sender address
+#   email_receiver: str       # email receiver address
+#   email_subject: str        # subject of the email
+#   email_body: str           # body of the email
+#   email_attachments: list   # files to attach with its path, optional (default - empty list)
+
+- name: Send email only if email receiver is given
+  block: 
+  - name: Default email attavhments
+    set_fact: 
+      email_attachments: []
+    when: email_attachments is given
+
+  - name: Send Email
+    mail:
+      host: "{{ email_server }}"
+      port: 25
+      from: "{{ email_sender }}"
+      to: "{{ email_receiver }}"
+      subject: "{{ email_subject }}"
+      body: "{{ email_body }}"
+      attach: "{{ email_attachments }}"
+  when: email_receiver is defined
