@@ -1,0 +1,30 @@
+---
+- name: Backup Files and Folders
+  hosts: localhost
+  vars_files:
+    - vars/main.yml
+  tasks:
+    - name: Create backup directory
+      file: 
+        path: "{{ backup_folder }}"
+        state: directory
+        mode: '0755'
+
+    - name: Archive and compress files
+      command: tar czf {{ backup_folder }}/backup_{{ ansible_date_time.iso8601 }}.tar.gz -C {{source_folder }} .
+
+    - name: Transfer backup to remote storage (optional)
+      copy:
+        src: "{{ backup_folder }}/backup_{{ ansible_date_time.iso8601 }}.tar.gz"
+        dest: "{{ remote_backup_folder }}"
+      when: remote_backup_enabled
+
+    - name: Send backup report
+      include_tasks: tasks/send_email.yml
+      vars:
+        email_sender: "backup@yourdomain.com"
+        email_reciver: "admin@yourdomain.com"
+        email_subject: "Backup Report for {{ ansible_date_time.iso8601 }}"
+        email_body: "Backup Completed successfully. Files are stored in {{ backup_folder }}."
+        email_attachments: []
+        
