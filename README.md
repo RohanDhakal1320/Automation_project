@@ -24,7 +24,7 @@ This is a Python-based project that integrates with weather APIs to automate wea
 
 Contributions are what make the open source comunity such a wonderful place to learn, inspire, and create/ Any contributions you make are greatly appreciated.
 
-Before contributing, please ensure you follow the [Contribution Guidelines](https://github.com/RohanDhakal1320/Personal_Profile/blob/main/docs/contribution.md) and adhere to the project's Code of Conduct.
+Before contributing, please ensure you follow the [Contribution Guidelines](https://github.com/RohanDhakal1320/Personal_Profile/blob/main/docs/contribution.md) and adhere to the project's [Code of Conduct](https://github.com/RohanDhakal1320/Personal_Profile/blob/main/docs/code_of_conduct.md)
 
 ## Contact
 
