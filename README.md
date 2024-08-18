@@ -12,16 +12,13 @@ This is a Python-based project that integrates with weather APIs to automate wea
 
 ## How to Use
 
-[Clone the Repository](https://github.com/RohanDhakal1320/Automation_using_Ansible.git)
+* [Clone the Repository](https://github.com/RohanDhakal1320/Automation_using_Ansible.git)
 
-Navigate to the Project Directory:
-E.g: cs Automation_using_Ansible
+* Navigate to the Project Directory: E.g: cs Automation_using_Ansible
 
-Execute Playbooks:
-Use the Ansible command to execute playbooks: ansible-plybook playbook.yml
+* Execute Playbooks: Use the Ansible command to execute playbooks: ansible-plybook playbook.yml
 
-Run Python Scripts:
-You can run the Python scripts directly. E.g: python3 weather.py
+* Run Python Scripts: You can run the Python scripts directly. E.g: python3 weather.py
 
 ## Contributing
 
