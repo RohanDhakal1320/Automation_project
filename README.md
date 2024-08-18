@@ -31,6 +31,6 @@ Before contributing, please ensure you follow the Contribution Guidelines and ad
 
 ## Contact
 
-If you have any questions or want to connect, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/rohan-dhakal-50b326194/)
+If you have any questions or want to connect, feel free to reach out to me on [LinkedIn](https://www.linkedin.com/rohan-dhakal-50b326194)
 
 
