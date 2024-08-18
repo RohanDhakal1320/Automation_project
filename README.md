@@ -27,7 +27,7 @@ You can run the Python scripts directly. E.g: python3 weather.py
 
 Contributions are what make the open source comunity such a wonderful place to learn, inspire, and create/ Any contributions you make are greatly appreciated.
 
-Before contributing, please ensure you follow the Contribution Guidelines and adhere to the project's Code of Conduct.
+Before contributing, please ensure you follow the [Contribution Guidelines](https://github.com/RohanDhakal1320/Personal_Profile/blob/main/docs/contribution.md) and adhere to the project's Code of Conduct.
 
 ## Contact
 
